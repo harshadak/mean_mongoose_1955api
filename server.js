@@ -8,6 +8,7 @@ var app = express();
 
 // Require body-parser (to receive post data from clients)
 var bodyParser = require('body-parser');
+app.use(bodyParser.urlencoded({ extended: true }));
 // Integrate body-parser with our App
 app.use(bodyParser.json());
 
